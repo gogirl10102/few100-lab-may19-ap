@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Webpack Showcase</title>
+    <title>Tip Calculator Lab</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Welcome to Class.</h1>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input id="billAmt"
+                   type="number"
+                   class="form-control">
+        </div>
+        <br>
+
+        <div class="btn-group">
+            <button type="button"
+                    data-tip=".1"
+                    class="btn btn-primary"
+                    id="ten">10%</button>
+            <button type="button"
+                    data-tip=".15"
+                    class="btn btn-primary"
+                    id="fifteen">15%</button>
+            <button type="button"
+                    data-tip=".2"
+                    disabled
+                    class="btn btn-primary"
+                    id="twenty">20%</button>
+        </div>
+        <div>
+            <span>You are tipping </span>
+            <span id="tipNote"></span>
+        </div>
+        <br><br>
+
+        <form>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <span class="list-group-item-test">Bill Amount: </span>
+                    <span id="billAmtDup"
+                          type="string"></span>
+                </div>
+                <div class="list-group-item">
+                    <span class="list-group-item-test">Tip Percentage: </span>
+                    <span id="tipPerCentage"></span>
+                </div>
+                <div class="list-group-item">
+                    <span class="list-group-item-test">Amount of Tip: </span>
+                    <span id="amtOfTip"
+                          type="string"></span>
+                </div>
+                <div class="list-group-item">
+                    <span class="list-group-item-test"><i>Total to be Paid: $</i></span>
+                    <span id="ttlPaid"
+                          type="string"><i></i></span>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
